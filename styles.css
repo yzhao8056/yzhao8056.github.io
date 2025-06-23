@@ -3,14 +3,12 @@ html {
 }
 
 body {
-    color: black;
     margin: 0;
-    height: 100vh;
     scroll-behavior: smooth;
 }
 
 nav {
-    background-color: rgba(72, 160, 193, 0.5);
+    background-color: rgba(72, 160, 193, 0.5); /* Air Superiority Blue 72A1C0 */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.7);
@@ -65,26 +63,52 @@ nav.scrolled {
     transform: scale(1.2);
 }
 
-.main-title {
+section {
+    color: black;
+    min-height: 80vh;
+}
+
+/* About Section */
+#about-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-section .about-top {
+    display: flex;
+    gap: 20px;
+}
+
+#about-section .about-top .profile-picture {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#about-section .about-top .titles {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-section .titles .main-title {
     font-weight: bold;
     text-align: center;
     font-size: 65px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.sub-title {
+#about-section .titles .sub-title {
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
-    
 }
 
-#landing {
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#about-section .bio {
+
 }
 
 #projects {
