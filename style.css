@@ -79,7 +79,6 @@ section {
 /* About Section */
 #about-section {
     height: 100vh;
-    gap: 1.5rem;
 }
 
 #about-section .about-top {
@@ -146,41 +145,35 @@ section {
     right: 0;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    border: 0.25rem solid #B0A3D4; /* Wisteria */
+    border: 0.25rem solid #72A1C0;
     transition: transform 0.4s;
 }
 
 #about-section .resume a {
     text-decoration: none;
-    color: #B0A3D4;
+    color: #72A1C0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-#about-section .resume img{
-    height: 1.5rem;
-    width: 1.5rem;
 }
 
 #about-section .resume:hover {
     transform: scale(1.2);
 }
 
-#about-section .about-bottom {
+#about-section .skills {
     display: flex;
     margin-top: 5rem;
     gap: 2rem;
 }
 
-#about-section .about-bottom i {
-    color: #8d709a;
-    font-size: 3.5rem;
-    transition: transform 0.4s, color 0.4s;
+#about-section .skills img {
+    transition: transform 0.4s;
+    height: 3rem;
+    width: auto;
 }
 
-#about-section .about-bottom i:hover {
-    color: #B0A3D4;
+#about-section .skills img:hover {
     transform: scale(1.2);
 }
 
@@ -195,8 +188,25 @@ section {
 }
 
 /* Contact Section */
-#contact-me {
+#contact-info {
     height: 100vh;
+}
+
+#contact-info .social-links {
+    display: flex;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+#contact-info .social-links i {
+    color: #8d709a; /* Lavender Purple */
+    font-size: 3.5rem;
+    transition: transform 0.4s, color 0.4s;
+}
+
+#contact-info .social-links i:hover {
+    color: #B0A3D4; /* Wisteria */
+    transform: scale(1.2);
 }
 
 /* For my dark mode friends */
