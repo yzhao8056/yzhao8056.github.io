@@ -4,7 +4,6 @@ html {
 
 body {
     margin: 0;
-    scroll-behavior: smooth;
 }
 
 /* Navigation Bar */
@@ -104,6 +103,16 @@ section {
 
 #about-section .profile-picture img:hover {
     transform: scale(1.2);
+}
+
+#about-section .decoration {
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 0;
+    left: -3rem;
+    height: auto;
+    width: 15rem;
+    pointer-events: none;
 }
 
 #about-section .titles {
