@@ -188,7 +188,39 @@ section {
 
 /* Projects Section */
 #my-projects {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+#my-projects .project {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#my-projects .project.reverse {
+    flex-direction: row-reverse;
+}
+
+#my-projects .project img {
+    height: 15rem;
+    width: auto;
+}
+
+#my-projects .project-description {
+    font-family: 'Jetbrains Mono', monospace;
+}
+
+#my-projects .fade-in {
+    opacity: 0;
+    transform: translateY(5rem);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+#my-projects .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Extracurriculars Section */
